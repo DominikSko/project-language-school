@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1.0 shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pizzeria</title>
+  <title>Laguage School of Wrocław</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -18,8 +18,8 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="logo">
-          <h1 class="logo__title"><span>Mamma</span>Mia!</h1>
-          <h2 class="logo__subtitle">the best homemade Italian food</h2>
+          <h1 class="logo__title"><span>Language School</span> of Wrocław!</h1>
+          <h2 class="logo__subtitle">Learn languages in your free time</h2>
         </div>
         <div id="cart" class="cart">
           <div class="cart__summary">
@@ -63,9 +63,12 @@
       <div class="main-wrapper container">
 
         <div class="main-nav">
-          <a href="#order" id="nav-order">Order online
-            <p>Delicious food delivered to your door</p></a>
-          <a href="#booking" id="nav-booking">Book a table<p>Visit our place and enjoy your dinner</p></a>
+          <a href="#order" id="nav-order">Order courses
+            <p>Pick course with your desired language</p></a>
+          <a href="#booking" id="nav-booking">Book free lesson<p>Visit our school for free lesson with tutor</p></a>
+          <a href="#translate" id="nav-translate">Translate documents
+            <p>Pick translation for your needs</p></a>
+          <a href="#job" id="nav-job">Looking for work<p>Join our school for various positions</p></a>
         </div>
 
         <div class="open-hours">
@@ -154,6 +157,48 @@
     <section id="booking">
       <div class="booking-wrapper container"></div>
     </section>
+
+    <section id="translate">
+      <div id="translate-list" class="translate-list container"></div>
+    </section>
+
+    <section id="job">
+      <form class="container">
+        <div class="form-group email">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select job position</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Tutor</option>
+            <option>Content provider</option>
+            <option>Accountant</option>
+            <option>Marketing specialist</option>
+            <option>Subcontractor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Select desirable working-hours</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Full time avilable</option>
+            <option>3/4 time</option>
+            <option>part time</option>
+            <option>weekends work time</option>
+            <option>evening work time</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Write about yourself</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group resume">
+          <label for="exampleFormControlFile1">Attach your resume</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+      </form>
+    </section>
+
   </div>
 
   <script id="template-booking-widget" type="text/x-handlebars-template">

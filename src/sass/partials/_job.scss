@@ -1,0 +1,19 @@
+.email {
+  padding-top: 50px;
+}
+
+.resume {
+  padding-bottom: 200px;
+}
+
+label {
+  @extend %h1;
+}
+
+option {
+  @extend %h2;
+}
+
+input {
+  @extend %h2;
+}

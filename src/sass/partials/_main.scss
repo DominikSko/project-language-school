@@ -9,6 +9,10 @@
 .main-nav {
   @include flex(row, flex-start, flex-start);
   bottom: ($base-size * -8);
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
 
   p {
     font-family: $font-text;
@@ -36,6 +40,7 @@
   height: 90px;
   overflow: hidden;
   transition: $transition;
+  margin-bottom: 30px;
 
 
   &.active {
@@ -64,6 +69,7 @@
   height: 90px;
   overflow: hidden;
   transition: $transition;
+  margin-bottom: 30px;
 
   &.active {
     opacity: 0.7;
@@ -75,6 +81,66 @@
   opacity: 0.7;
 }
 
+#nav-translate {
+  @extend %h1;
+  color: $color-light;
+  text-decoration: none;
+  margin-right: $base-size;
+  text-align: center;
+  line-height: 66px;
+  padding: $base-size ($base-size * 2);
+  border-radius: $radius;
+  width: 100%;
+  background-image: url(../../images/pizza-1.jpg);
+  background-color: $color-dark;
+  background-position: center;
+  background-size: cover;
+  height: 90px;
+  overflow: hidden;
+  transition: $transition;
+  margin-bottom: 30px;
+
+
+  &.active {
+    opacity: 0.7;
+  }
+}
+
+#nav-translate:hover {
+  line-height: normal;
+  opacity: 0.7;
+}
+
+#nav-job {
+  @extend %h1;
+  color: $color-light;
+  text-decoration: none;
+  margin-right: $base-size;
+  text-align: center;
+  line-height: 66px;
+  padding: $base-size ($base-size * 2);
+  border-radius: $radius;
+  width: 100%;
+  background-image: url(../../images/pizza-1.jpg);
+  background-color: $color-dark;
+  background-position: center;
+  background-size: cover;
+  height: 90px;
+  overflow: hidden;
+  transition: $transition;
+  margin-bottom: 30px;
+
+
+  &.active {
+    opacity: 0.7;
+  }
+}
+
+#nav-job:hover {
+  line-height: normal;
+  opacity: 0.7;
+}
+
 .open-hours {
   @extend %h1;
   color: $color-light;
@@ -82,7 +148,7 @@
   text-align: center;
   margin: $base-size 0 0 0;
   padding: $base-size ($base-size * 2);
-  background: $color-danger;
+  background: $color-orange;
   background-position: center;
   border-radius: $radius;
   width: 100%;
